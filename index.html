@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen" href="/css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="/js/main.js" async></script>
+    </head>
+    <body>
+        <div class="calc-main-container">
+            <div class="calc-dashboard-container">
+                <ul class="calc-dashboard-row">
+                    <li class="calc-dashboard-item hidden-xs">
+                        <span>
+                            <label for="dash-amount">Betrag</label>
+                        </span>
+                        <span>
+                            <input type="text" name="dash-amount" class="dashboard-item-amount" id="dash-amount" maxlength="9" placeholder="1.000 €" value="1000">
+                        </span>
+                    </li>
+                    <li class="calc-dashboard-item hidden-xs">
+                        <span><a href="#" class="btn btn-switch active" id="all-btn">alle Angebote</a></span>
+                        <span><a href="#" class="btn btn-switch" id="flex-btn">Tagesgeld</a></span>
+                        <span><a href="#" class="btn btn-switch" id="fixed-btn">Festgeld</a></span>
+                    </li>
+                    <li class="calc-dashboard-item">
+                        <span>
+                            <label for="dash-maturity">Laufzeit</label>
+                        </span>
+                        <span>
+                            <select id="dash-maturity" name="dash-maturity">
+                                <option value="all" data-duration="all">Alle anzeigen</option>
+                                <option value="p.a." data-duration="p.a.">Tages-/Flexgeld</option>
+                            </select>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="calc-list-container">
+                <div class="calc-list-loading">loading ...</div>
+            </div>
+            <div class="calc-disclaimer-container">
+                <div class="calc-disclaimer-text">
+                    <sup>*</sup> Berechnete Zinserträge verstehen sich als Näherungswerte und beziehen sich auf die Produktlaufzeit. Maßgeblich für die Verzinsung sind das Angebot und die Berechnungsmethode der Bank. Für Tages- und Flexgeld24 wird ein konstanter Zins unterstellt.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
