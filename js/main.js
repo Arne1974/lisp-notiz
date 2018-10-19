@@ -106,7 +106,7 @@ $(document).ready(function () {
                                         , '</div>'
                                         , '</li>'
                                         , '<li class="calc-item-cta">'
-                                        , '<span class="cta-button-wrapper"><a href="https://www.lispnotiz.de/flows/register" target="_blank" class="btn btn-primary">Jetzt anlegen</a></span>'
+                                        , '<span class="cta-button-wrapper"><a href="https://www.example.org?params=/flows/register" target="_blank" class="btn btn-primary">Jetzt anlegen</a></span>'
                                         , '<div class="calc-sub-note hidden-lg hidden-md"><a href="' + pp.urlAnlageangebot + '" target="_blank" class="cta-more-text">Weitere Informationen</a></div>'
                                         , '</li>'
                                         , '</ul>'].join('\n');
@@ -173,7 +173,7 @@ $(document).ready(function () {
                         'duration': 12,
                         'productBankCountry': 'tbd',
                         'showTooltip': 'tbd',
-                        'urlAnlageangebot': 'https://www.lispnotiz.de/product/details/' + productBankBic + '/' + maturityCode,
+                        'urlAnlageangebot': 'https://www.example.org?params=/product/details/' + productBankBic + '/' + maturityCode,
                         'productBankLogo': 'tbd',
                         'sortNumber': 0,
                         'descriptionHtml': '',
@@ -193,43 +193,51 @@ $(document).ready(function () {
             settings.showTooltip = 'Einlagen sind pro Kunde bis 100.000 EUR zu 100 % abgesichert.';
 
             if (productBankBic === 'HAABAT2K') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/csm_Anadi_Logo_192d674e89.png';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#anadi';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=csm_Anadi_Logo_192d674e89.png';
+                link = '/#anadi';
                 settings.productBankCountry = '&Ouml;sterreich';
             } else if (productBankBic === 'BUCUROBU') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/logo_alpha_bank_160x34.png';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#alpha';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=logo_alpha_bank_160x34.png';
+                link = '/#alpha';
                 settings.productBankCountry = 'Rum&auml;nien';
             } else if (productBankBic === 'ATMBGB22') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/banklogo/atombank_logo.png';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#atom';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=banklogo/atombank_logo.png';
+                link = '/#atom';
                 settings.productBankCountry = 'Gro&szlig;britannien';
                 settings.showTooltip = 'Einlagen sind pro Kunde bis 85.000 GBP zu 100 % abgesichert.';
             } else if (productBankBic === 'CBRLGB2L') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/Close_Brothers_Savings_Logo.png';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#closebrothers';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=Close_Brothers_Savings_Logo.png';
+                link = '/#closebrothers';
                 settings.productBankCountry = 'Gro&szlig;britannien';
                 settings.showTooltip = 'Einlagen sind pro Kunde bis 85.000 GBP zu 100 % abgesichert.';
             } else if (productBankBic === 'PARXLV22') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/Citadele_Logo_klein.jpg';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#cbl';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=Citadele_Logo_klein.jpg';
+                link = '/#cbl';
                 settings.productBankCountry = 'Lettland';
             } else if (productBankBic === 'CPLUDES1XXX') {
-                imageSrc = 'https://www.lispnotiz.de/uploads/tx_sdcontent/CP_Logo_transp_v2.png';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#creditplus';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=CP_Logo_transp_v2.png';
+                link = '/#creditplus';
                 settings.productBankCountry = 'Deutschland';
             } else if (productBankBic === 'FIMBMTM3XXX') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/_processed_/csm_fimbank_730c9feb99.png';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#fim';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=csm_fimbank_730c9feb99.png';
+                link = '/#fim';
                 settings.productBankCountry = 'Malta';
             } else if (productBankBic === 'BACCFR22') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/oney_logo_klein.jpg';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#oney';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=oney_logo_klein.jpg';
+                link = '/#oney';
                 settings.productBankCountry = 'Frankreich';
             } else if (productBankBic === 'RTMBLV2X') {
-                imageSrc = 'https://www.lispnotiz.de/fileadmin/user_upload/RietumuLogo.gif';
-                link = 'https://www.lispnotiz.de/de/unsere-banken-lispnotiz/#rietumu';
+                imageSrc = 'https://via.placeholder.com/120x53?logo=RietumuLogo.gif';
+                link = '/#rietumu';
                 settings.productBankCountry = 'Lettland';
+            } else if (productBankBic === 'BDIGPTPL') {
+                imageSrc = 'https://via.placeholder.com/120x53?logo=big_logo.png';
+                link = '/#bigbank';
+                settings.productBankCountry = 'Portugal';
+            } else {
+                imageSrc = 'https://via.placeholder.com/120x53';
+                link = 'https://www.example.org/';
+                settings.productBankCountry = 'Utopia';
             }
             settings.productBankLogo = '<a href="' + link + '" target="_blank" title="' + productBankName + '"><img src="' + imageSrc + '" alt="' + productBankName + '" /></a>';
 

@@ -1,0 +1,26 @@
+{
+  "name": "lisp-notiz",
+  "version": "1.0.0",
+  "description": "Testing a calculate method on certain products",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./ -p 3030 -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arne1974/lisp-notiz.git"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arne1974/lisp-notiz/issues"
+  },
+  "homepage": "https://github.com/Arne1974/lisp-notiz#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
