@@ -12,7 +12,9 @@
     "url": "git+https://github.com/Arne1974/lisp-notiz.git"
   },
   "keywords": [
-    "jquery"
+    "jquery",
+    "bootstrap3",
+    "cdn"
   ],
   "author": "",
   "license": "ISC",
