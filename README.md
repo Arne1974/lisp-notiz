@@ -1,6 +1,14 @@
 # lisp-notiz
-Testing a calculate method on certain products
+Testing calculate methods on certain products.
 
+-Imports data and schema via Ajax on init.
+-Builds template line by line:
+    -Build properties and save line by sort number
+    -Append as one to DOM and remove loader
+-Initialze tooltip on Country-field
+-Sets filter according to available runtimes
+-Provide button functionality
+-Set start value and trigger calculation method
 
 
 ### http-server
