@@ -78,24 +78,23 @@ $(document).ready(function () {
                             showAmountNote = (maturityCodeTerm === 'fixed') ? '' : ' p.a.',
                             abstractSortNumber = ((pp.sortNumber) ? pp.sortNumber : i),
                             child = ['<ul class="calc-list-row" data-term="' + maturityCodeTerm + '">'
-                                        , '<li class="calc-item-rate hidden-xs" data-rate="' + rates.rate + '">' + rates.ratesClear + '&nbsp;%\n\
-                                        <div class="calc-sub-note"><span class="rate-explain-text">' + showRatePreview + '</span></div>\n\
-                                    </li>'
+                                        , '<li class="calc-item-rate hidden-xs" data-rate="' + rates.rate + '">' + rates.ratesClear + '&nbsp;%'
+                                        , '<div class="calc-sub-note"><span class="rate-explain-text">' + showRatePreview + '</span></div></li>'
                                         , '<li class="calc-item-maturitycode" data-duration="' + pp.duration + '">'
                                         , pp.announcement
                                         , '<span class="maturitycode-duration-wrapper">' + durationClear + '</span>'
                                         , '<div class="calc-sub-note hidden-xs"><span class="maturitycode-explain-text">Laufzeit</span></div>'
                                         , '</li>'
-                                        , '<li class="calc-item-productbankname"><span class="productbankname-logo-wrapper">' + pp.productBankLogo + '</span>\
-                                        <div class="calc-sub-note hidden-xs"><span class="logo-country-text" data-toggle="tooltip" data-placement="bottom" title="' + pp.showTooltip + '">' + pp.productBankCountry + '</span></div>\n\
-                                    </li>'
-                                        , '<li class="calc-item-rate visible-xs-block" data-rate="' + rates.rate + '"><span class="rate-text-wrapper">' + rates.ratesClear + '&nbsp;%</span>\n\
-                                        <div class="calc-sub-note"><span class="rate-explain-text">' + showRatePreview + '</span></div>\n\
-                                    </li>'
+                                        , '<li class="calc-item-productbankname"><span class="productbankname-logo-wrapper">' + pp.productBankLogo + '</span>'
+                                        , '<div class="calc-sub-note hidden-xs"><span class="logo-country-text" data-toggle="tooltip" data-placement="bottom" title="' + pp.showTooltip + '">' + pp.productBankCountry + '</span></div>'
+                                        , '</li>'
+                                        , '<li class="calc-item-rate visible-xs-block" data-rate="' + rates.rate + '"><span class="rate-text-wrapper">' + rates.ratesClear + '&nbsp;%</span>'
+                                        , '<div class="calc-sub-note"><span class="rate-explain-text">' + showRatePreview + '</span></div>'
+                                        , '</li>'
                                         , '<li class="calc-item-amount hidden-xs">'
                                         , '<span class="calc-amount-price">0,00</span>'
-                                        , '<span class="calc-amount-currency">&euro;</span>\n\
-                                        <div class="calc-sub-note"><span class="amount-note-text">Zinsertrag' + showAmountNote + '<sup>*</sup></span></div>'
+                                        , '<span class="calc-amount-currency">&euro;</span>'
+                                        , '<div class="calc-sub-note"><span class="amount-note-text">Zinsertrag' + showAmountNote + '<sup>*</sup></span></div>'
                                         , '</li>'
                                         , '<li class="calc-item-description hidden-sm hidden-xs">'
                                         , '<div class="item-description-text">'
