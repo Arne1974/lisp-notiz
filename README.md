@@ -3,20 +3,20 @@ Testing calculate methods on certain products.
 
 -Imports data and schema via Ajax on init.
 -Builds template line by line:
-    -Build properties and save line by sort number
+    -Build properties and save lines by sort number
     -Append as one to DOM and remove loader
--Initialze tooltip on Country-field
+    -Provide Tages-/Flexgeld-Button with switch functionality
+-Initialize tooltip on Country-field
 -Sets filter according to available runtimes
--Provide button functionality
--Set start value and trigger calculation method
+-Initialize calculation method with default values
+-Provide function to blacklist BICs (notToPromote), these won't be displayed
 
+Repository: https://github.com/Arne1974/lisp-notiz
 
 ### http-server
-a lightweight http-server for grunt and tests
+a lightweight http-server
 `npm install http-server -g`
 
 ### run commands
-`npm install`
-`npm start`
-
-It will open the page in the default browser. Alternatively you can browse to `localhost:3030` to open the page.
+`npm install` - Install packages via npm
+`npm start` - This will launch your default browser and open `localhost:3030`. Alternatively you can browse directly to that location.
